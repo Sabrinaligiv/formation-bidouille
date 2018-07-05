@@ -1,0 +1,169 @@
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  width: 100vw;
+  background-color: black;
+  z-index: 5;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+body {
+  margin: 0;
+  background: black;
+}
+
+a {
+  position: relative;
+  margin: 0;
+}
+
+h1 {
+  padding: 20px 10px 10px 10px;
+  font-family: "arial", sans-serif;
+  font-size: 40;
+  color: fff;
+  font-weight: bold;
+}
+h2 {
+  font-family: "arial", sans-serif;
+  padding: 30px 0px 0px 20px;
+  color: fff;
+  font-weight: bold;
+  text-align: left;
+}
+
+.nav-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  float: left;
+  font-family: "arial", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav-menu li {
+  animation: 1s ease-out 0s 1 slideInFromTop;
+  animation: 1s ease-out 0s 1 fadein;
+  padding: 10px 40px 30px 20px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+@keyframes OrangeIn {
+  from {
+    color: white;
+  }
+  to {
+    color: #f16e00;
+  }
+}
+
+.nav-menu a:hover,
+a:active,
+a:focus {
+  color: #f16e00;
+  animation: 0.3s ease-out 0s 1 OrangeIn;
+  text-decoration: none;
+}
+.intro-container img {
+  display: flex;
+  position: relative; 
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  width: 100vmax;
+}
+
+p {
+  font-family: "arial", sans-serif;
+  color: fff;
+  padding: 10px 40px 30px 20px;
+}
+.intro-container h2 {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  font-size: 100;
+}
+.welcome-container {
+  position: relative;
+  top: -100px;
+  background: black;
+}
+
+#prepare {
+  width: 100%;
+  margin: auto;
+  display: inline-flex;
+  flex-direction: row;
+  align-items:center;
+  align-content: center;
+  justify-content: center;
+
+  }
+
+  #super-agenda article ul img {
+  margin: 10px;
+  display: flex;
+  float: left;
+  width: 20%;
+  border-radius: 100%;
+}
+
+footer ul li a{
+  list-style: none;
+  padding: 10;
+  margin: 10;
+  color: #f16e00;
+  float: left;
+  font-family: "arial", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+footer ul li a:hover,
+a:active,
+a:focus {
+  color: white;
+}
+footer {
+display: flex;
+flex-direction:row;
+position: relative; 
+justify-content: center;
+align-items: center;
+background: black;
+bottom:0;
+width:100%;
+padding-top:50px;
+height:50px;
+    }
+footer ul li{
+ display: flex;
+flex-direction:row;
+position: relative; 
+justify-content: center;
+align-items: center;
+}
